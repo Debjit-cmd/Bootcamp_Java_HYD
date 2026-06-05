@@ -1,0 +1,23 @@
+package Inheritance;
+
+class Teacher {
+    String designation = "Teacher";
+    String collegeName = "ABD College";
+}
+
+class ComputerTeacher extends Teacher {
+    String mainSubject = "Physics";
+
+    void display() {
+        System.out.println("College Name: " + collegeName);
+        System.out.println("Designation: " + designation);
+        System.out.println("Main Subject: " + mainSubject);
+    }
+}
+
+public class Single_Inheritance_Question {
+    public static void main(String[] args) {
+        ComputerTeacher ct = new ComputerTeacher();
+        ct.display();
+    }
+}
